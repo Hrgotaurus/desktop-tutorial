@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header_nav">
+    <header class="header_nav header_nav_fixed">
       <div class="nav_container">
         <a class="woodmark_logo brand_logo" href="index.html"
           >HRVOJE GRGURINOVIĆ - PORTFOLIO</a
         >
         <ul class="nav_list" id="myTopnav">
-          <a href="#home" class="active">Home</a>
-          <a href="#news">About</a>
-          <a href="#contact">Services</a>
-          <a href="#about">Contact</a>
+          <a href="#home" class="active nav_item">Home</a>
+          <a href="#about" class="nav_item">About</a>
+          <a href="#services" class="nav_item">Services</a>
+          <a href="#contact" class="contact_header">Contact</a>
         </ul>
 
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -28,6 +28,63 @@
         </a>
       </div>
     </header>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Hrvoje Grgurinović – Portfolio</h1>
+        <p>Portfolio Front-end developera Hrvoja Grgurinovića</p>
+        <a href="#services" class="hero-button">View Services</a>
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="about-us-container">
+        <div class="about-text">
+          <h3 class="tagline">Crafting Digital Experiences</h3>
+          <h2>Innovative front-end development</h2>
+          <p>
+            Hrvoje Grgurinović is an aspiring certified Front-end developer who
+            has completed an adult education course at Algebra University. Based
+            in New York, this portfolio site showcases Hrvoje's projects,
+            skills, and contact information, focusing on creating elegant and
+            responsive web structures. Explore his work as a springboard for
+            future projects and collaboration in the industry.
+          </p>
+          <a href="#contact" class="about-link">Get in touch</a>
+        </div>
+        <div class="about-image">
+          <img src="about-us.jpeg" alt="Cityscape with construction" />
+        </div>
+      </div>
+    </section>
+    <section class="services-section">
+      <div class="services-header">
+        <h3 class="tagline">Creative Solutions</h3>
+        <h2 class="section-title">Innovative front-end development</h2>
+      </div>
+      <div class="services-cards">
+        <div class="service-card">
+          <img src="responsive-web-design.jpeg" alt="Responsive Web Design" />
+          <h3>Responsive web design <span>&#x2794;</span></h3>
+          <p>
+            Create stunning, user-friendly websites that adapt to any device.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="front-end-development.jpeg" alt="Front-End Development" />
+          <h3>Front-End development <span>&#x2794;</span></h3>
+          <p>Transform designs into dynamic, interactive user experiences.</p>
+        </div>
+        <div class="service-card">
+          <img
+            src="project-collaboration.jpeg"
+            alt="Project Collaboration"
+            class="last-image"
+          />
+          <h3>Project collaboration <span>&#x2794;</span></h3>
+          <p>Work closely with clients to achieve their vision and goals.</p>
+        </div>
+      </div>
+    </section>
+
     <script>
       function myFunction() {
         var x = document.getElementById("myTopnav");
